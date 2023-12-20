@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e2532157-e63a-4e2e-967a-8cf1f74fb46d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>GCAM_Common</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Network\Connection\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Assembler\Assembler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Data\BaseData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Data\DataNumberOfCamera.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Data\DataPictureFromCamera.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packet\AddClientPacket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packet\DataRawPacket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packet\LoginRequestPacket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packet\BasePacket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packet\LoginResponsePacket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Encryption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Helper.cs" />
+  </ItemGroup>
+</Project>
